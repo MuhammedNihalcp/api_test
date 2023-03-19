@@ -15,7 +15,7 @@ class Api2 {
       log('response kyichu');
       log(resposnce.statusCode.toString(), name: 'status code');
       if (resposnce.statusCode == 200 || resposnce.statusCode == 201) {
-        // log(resposnce.data.toString());
+        log(resposnce.data.toString());
         List<ApiModel2> getapi = (resposnce.data as List).map((e) {
           return ApiModel2.fromJson(e);
         }).toList();
